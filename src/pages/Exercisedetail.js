@@ -13,7 +13,8 @@ export const Exercisedetail = () => {
   const [videodetail ,setvideodetail] =useState([]);
   const [targetmuscledata,settargetmuscledata] = useState([])
   const [equipmentdata ,setequipmentdata] =useState([])
- const {id} = useParams();
+  const { id } = useParams();
+
 
 
   const fetchclickexercise = async ()=> 
@@ -50,11 +51,12 @@ export const Exercisedetail = () => {
     } ,[id]);
 
 
+    if (!exercisedetail) return <div>No Data</div>;
 
 
   return (
     <div>
-    <Box> 
+    <Box sx={{ mt: { lg: '96px', xs: '60px' } }}> 
     <Detail   exercisedetail = {exercisedetail}/>
     <Youtube   videodetail ={videodetail} name ={exercisedetail.name}/>
     <Similarexercise targetmuscledata = {targetmuscledata} equipmentdata={equipmentdata}/>

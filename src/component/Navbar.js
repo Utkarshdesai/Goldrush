@@ -21,9 +21,8 @@ export const Navbar = () => {
       alignContent="center">
       
         <Link to="/" style={{ textDecoration: 'none', color: '#3A1212', borderBottom: '3px solid #FF2625' }} > Home </Link>
-        <a href="#exercise" style={{ textDecoration: 'none', color: '#3A1212',  }}> exercisedetail </a>
-        <Link to="/bmi" style={{ textDecoration: 'none', color: '#3A1212',  }}> Bmi </Link>
-
+        <a href="#exercise" style={{ textDecoration: 'none', color: '#3A1212',  }}> exercises </a>
+       
       </Stack>
 
      </Stack>
